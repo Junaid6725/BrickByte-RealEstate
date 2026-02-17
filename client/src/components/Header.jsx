@@ -6,7 +6,7 @@ import { NavLink, Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="bg-white shadow-lg fixed top-0 w-full h-16">
+      <div className="bg-white shadow-lg w-full h-16">
         <nav className="flex justify-between items-center px-6 h-full py-5">
           <Link to="/">
             <span className="flex  items-center sm:gap-1 text-purple-700">
@@ -46,7 +46,7 @@ const Header = () => {
               <li>About</li>
             </NavLink>
             <NavLink
-              to="/signin"
+              to="/sign-in"
               className={({ isActive }) =>
                 isActive
                   ? " text-slate-700  font-bold text-md sm:text-lg"
